@@ -8,9 +8,9 @@ class NewsView(DetailView):
 
     model = Article
     template_name = 'article.html'
+    context_object_name = 'article'
 
 
 
 def show_news(request, news_id=0, cat_id=0):
-    resp = HttpResponse(f'Hello, Pitty! category={cat_id}, news={news_id}')
-    return resp
+    return render(request, 'blabla.html', {'news_id': news_id})
