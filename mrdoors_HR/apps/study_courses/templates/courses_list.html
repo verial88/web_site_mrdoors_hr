@@ -1,0 +1,10 @@
+{% extends 'news/base.html' %}
+
+{% block title %}Список изучаемых курсов{% endblock %}
+
+{% block content %}
+    {% for course in object_list %}
+        <b>{{ study_courses.create_date }}</b>
+        <br>
+    {% endfor %}
+{% endblock %}

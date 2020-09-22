@@ -16,3 +16,4 @@ class Study_course(models.Model):
     class Meta:
         verbose_name = 'Изучаемый курс'
         verbose_name_plural = 'Изучаемые курсы'
+        ordering = ['create_date']
